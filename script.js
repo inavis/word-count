@@ -158,7 +158,7 @@ document.querySelector("#total-count").textContent=totcount;
 
 //
 let calculatelength = () =>{
-  let c = document.querySelector("#text-box").value.length;
+  let c = document.querySelector("#text-box").value.trim().length; //remove extra spaces on sides using trim
   console.log(c)
   let area= document.querySelector("#display");
   area.value=c;
